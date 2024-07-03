@@ -1,0 +1,377 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 19 11:02:14 2024
+| Host         : LAPTOP-MBR5GTCL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   302 |
+| Unused register locations in slices containing registers |    47 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      3 |            1 |
+|      4 |            1 |
+|      5 |            1 |
+|      6 |            2 |
+|      7 |            1 |
+|      8 |          256 |
+|      9 |            1 |
+|     12 |            1 |
+|     14 |            1 |
+|     15 |            1 |
+|    16+ |           35 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             153 |           97 |
+| No           | No                    | Yes                    |              32 |           13 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              41 |           19 |
+| Yes          | No                    | Yes                    |            3064 |         1812 |
+| Yes          | Yes                   | No                     |              23 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------+------------------------------------------+----------------------+------------------+----------------+
+|                         Clock Signal                         |               Enable Signal              |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------+------------------------------------------+----------------------+------------------+----------------+
+|  m_CU/ALU_OP_reg[1]_0                                        |                                          |                      |                2 |              2 |
+|  m_Display/p_0_in                                            |                                          | swb_IBUF[5]          |                1 |              3 |
+|  swb_IBUF_BUFG[6]                                            | m_CU/ALU_OP[3]_i_1_n_1                   |                      |                2 |              4 |
+|  m_InstructionFetcher/FSM_sequential_current_state_reg[0][0] |                                          |                      |                4 |              5 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/E[0]                                | swb_IBUF[5]          |                2 |              6 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/PC_Write_reg_0[0]                   | swb_IBUF[5]          |                2 |              6 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_0                     | m_CU/SE_s_reg_0      |                6 |              7 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_19[0]            | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_7[0]             | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[0]_6[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_6[0]             | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_2[0]             | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_25[0]            | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_9[0]             | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_22[0]            | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_8[0]                  | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_36[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_1[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_11[0]             | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_27[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_12[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_6[0]                  | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_13[0]             | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_2[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_28[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_34[0]                 | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_3[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_17[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_20[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_21[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_45[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_13[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_37[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/F_reg[3]_rep__3[0]                  | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_10[0]             | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_14[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_23[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_25[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_31[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/F_reg[1]_rep__15[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_43[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_15[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_3[0]                  | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_5[0]                  | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_1[0]                  | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_39[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_30[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_44[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_9[0]                  | swb_IBUF[5]          |                8 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_22[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_14[0]             | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_38[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_7[0]                  | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_4[0]                  | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_26[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_11[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_18[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_10[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_16[0]                 | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_24[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_29[0]                 | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_35[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_40[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_19[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_41[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_42[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_12[0]             | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_32[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_4[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[0]_1[0]                  | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_6[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_8[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_38[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_5[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_33[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_40[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_42[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_2[0]                  | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_39[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_7[0]              | swb_IBUF[5]          |                8 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Size_s_reg[1]_41[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_rep_9[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[0]_rep_5[0]             | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_20[0]            | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_21[0]            | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_3[0]             | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_4[0]             | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_23[0]            | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_24[0]            | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[0]_7[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_8[0]             | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_27[0]            | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_5[0]             | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__0_0[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__0_7[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__6_8[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__15_6[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__1_2[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__0_6[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__14_2[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__21_1[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__2_0[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__7_2[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__6_6[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__7_3[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__15_3[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__15_5[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__14_1[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[0]_rep__6_7[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__15_4[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/E[0]                               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_99[0]                | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__3_6[0]               | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__3_9[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__3_8[0]               | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__3_10[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__3_11[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[1]_rep__3_7[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__1_22[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__2_4[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__2_6[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__3_11[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__1_23[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__1_21[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__2_5[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__2_7[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__1_20[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__2_8[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__3_24[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__3_25[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__3_26[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[2]_rep__3_27[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__0_22[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__0_23[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__0_19[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__0_21[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__0_20[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep_13[0]                 | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__4_9[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__3_10[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__4_7[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep_11[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__3_12[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__3_14[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_11[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__3_11[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__3_13[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__4_8[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[3]_rep__3_16[0]              | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__0_15[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_10[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep_10[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_12[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_13[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep_12[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_14[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_11[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_4[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_15[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_3[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_13[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_9[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__0_12[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_13[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_15[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__0_10[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__0_11[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_12[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_14[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__0_13[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_16[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_8[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_7[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_18[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__2_8[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_17[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_5[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__0_14[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_6[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[4]_rep__3_10[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_11[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_13[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_15[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_10[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep_15[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_16[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_12[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_8[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_6[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_7[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_5[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_14[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__3_9[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[5]_rep__2_9[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep_18[0]                 | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__2_14[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__2_15[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__0_15[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__2_12[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__2_16[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__2_11[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_10[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_14[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_15[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_16[0]              | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_17[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__0_14[0]              | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_18[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__0_16[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[6]_rep__0_17[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__2_18[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_20[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__2_19[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__2_20[0]              | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__0_19[0]              | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/F_reg[7]_rep__1_10[0]              | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_115[0]               | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_117[0]               | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_122[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_112[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_123[0]               | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_120[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_125[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_126[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_116[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_124[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_118[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_121[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_114[0]               | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_104[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_119[0]               | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_113[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Size_s_reg[1]_102[0]               | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_1[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_2[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_3[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep[0]               | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_17[0]            | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_18[0]            | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg[0]                   | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_8[0]                 | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_9[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_10[0]            | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_5[0]                 | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_12[0]            | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_13[0]            | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_13[0]                | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_0[0]                 | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_14[0]                | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_4[0]                 | swb_IBUF[5]          |                7 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_12[0]                | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_6[0]                 | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_7[0]                 | swb_IBUF[5]          |                2 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_11[0]            | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_1[0]             | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_15[0]                | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_10[0]                | swb_IBUF[5]          |                4 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_0[0]             | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_14[0]            | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_11[0]                | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_15[0]            | swb_IBUF[5]          |                6 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_16[0]            | swb_IBUF[5]          |                3 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_ALU/Mem_Write_reg_rep_26[0]            | swb_IBUF[5]          |                5 |              8 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_0                     |                      |                5 |              9 |
+|  swb_IBUF_BUFG[6]                                            | m_CU/w_data_s[2]_i_1_n_1                 | swb_IBUF[5]          |                4 |             12 |
+|  swb_IBUF_BUFG[6]                                            |                                          | swb_IBUF[5]          |                8 |             14 |
+|  clk_IBUF_BUFG                                               |                                          | swb_IBUF[5]          |                4 |             15 |
+| ~swb_IBUF_BUFG[6]                                            | m_CU/Mem_Write_reg_0                     | m_CU/Size_s_reg[1]_0 |               11 |             16 |
+|  swb_IBUF_BUFG[6]                                            | m_CU/IR                                  |                      |               12 |             28 |
+|  n_0_9717_BUFG                                               |                                          |                      |               31 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/E[0]                | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_2[0]  | swb_IBUF[5]          |               18 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_12[0] | swb_IBUF[5]          |               17 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_1[0]  | swb_IBUF[5]          |               26 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_20[0] | swb_IBUF[5]          |               17 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg[0]    | swb_IBUF[5]          |               26 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_10[0] | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_19[0] | swb_IBUF[5]          |               17 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_0[0]  | swb_IBUF[5]          |               19 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_11[0] | swb_IBUF[5]          |               17 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_14[0] | swb_IBUF[5]          |               21 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_15[0] | swb_IBUF[5]          |               18 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_16[0] | swb_IBUF[5]          |               20 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_13[0] | swb_IBUF[5]          |               19 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_17[0] | swb_IBUF[5]          |               16 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_18[0] | swb_IBUF[5]          |               17 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_26[0] | swb_IBUF[5]          |               19 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_9[0]  | swb_IBUF[5]          |               23 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_3[0]  | swb_IBUF[5]          |               23 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_4[0]  | swb_IBUF[5]          |               24 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_23[0] | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_28[0] | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_5[0]  | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_27[0] | swb_IBUF[5]          |               16 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_21[0] | swb_IBUF[5]          |               19 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_22[0] | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_24[0] | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_25[0] | swb_IBUF[5]          |               19 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_8[0]  | swb_IBUF[5]          |               22 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_7[0]  | swb_IBUF[5]          |               24 |             32 |
+| ~swb_IBUF_BUFG[6]                                            | m_InstructionFetcher/Reg_Write_reg_6[0]  | swb_IBUF[5]          |               18 |             32 |
+| ~swb_IBUF_BUFG[6]                                            |                                          |                      |               60 |            114 |
++--------------------------------------------------------------+------------------------------------------+----------------------+------------------+----------------+
+
+

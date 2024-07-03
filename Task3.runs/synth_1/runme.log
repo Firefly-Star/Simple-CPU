@@ -1,0 +1,1340 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tfgg484-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23392 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 429.719 ; gain = 97.598
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/TOP.v:1]
+	Parameter Mem_W bound to: 1161969468 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'InstructionFetcher' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:1]
+WARNING: [Synth 8-5788] Register IR_reg in module InstructionFetcher is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:48]
+WARNING: [Synth 8-3848] Net IM[63] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[62] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[61] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[60] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[59] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[58] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[57] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[56] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[55] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[54] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[53] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[52] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[51] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[50] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[49] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[48] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[47] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[46] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[45] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[44] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[43] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[42] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[41] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[40] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[39] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[38] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[37] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[36] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[35] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[34] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[33] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[32] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[31] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[30] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[29] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[28] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[27] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[26] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[25] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[24] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[23] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[22] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[21] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[20] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[19] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[18] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+WARNING: [Synth 8-3848] Net IM[17] in module/entity InstructionFetcher does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionFetcher' (1#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'PC_Data' does not match port width (6) of module 'InstructionFetcher' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/TOP.v:57]
+INFO: [Synth 8-6157] synthesizing module 'PC_end' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:1]
+INFO: [Synth 8-4471] merging register 'PC_reg[90][31:0]' into 'PC_reg[91][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[89][31:0]' into 'PC_reg[91][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[87][31:0]' into 'PC_reg[88][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[86][31:0]' into 'PC_reg[88][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[85][31:0]' into 'PC_reg[88][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[82][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[80][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[79][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[77][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[76][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[74][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[73][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[71][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[70][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[69][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[67][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[66][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[63][31:0]' into 'PC_reg[64][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[62][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[61][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[60][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[59][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[58][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[57][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[56][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[55][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[54][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[53][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[52][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[51][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[50][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[49][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[48][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[47][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[46][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[45][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[44][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[43][31:0]' into 'PC_reg[65][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[42][31:0]' into 'PC_reg[64][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[41][31:0]' into 'PC_reg[64][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[40][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[39][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[38][31:0]' into 'PC_reg[83][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[37][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[36][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[35][31:0]' into 'PC_reg[81][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[34][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[33][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[32][31:0]' into 'PC_reg[78][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[31][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[30][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[29][31:0]' into 'PC_reg[75][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[28][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[27][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[26][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[25][31:0]' into 'PC_reg[72][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[24][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[23][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[22][31:0]' into 'PC_reg[68][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[21][31:0]' into 'PC_reg[65][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[20][31:0]' into 'PC_reg[65][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[19][31:0]' into 'PC_reg[65][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[17][31:0]' into 'PC_reg[18][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[16][31:0]' into 'PC_reg[18][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[15][31:0]' into 'PC_reg[91][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[14][31:0]' into 'PC_reg[91][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[13][31:0]' into 'PC_reg[91][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[12][31:0]' into 'PC_reg[88][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[11][31:0]' into 'PC_reg[84][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[10][31:0]' into 'PC_reg[84][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[8][31:0]' into 'PC_reg[9][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[7][31:0]' into 'PC_reg[9][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[5][31:0]' into 'PC_reg[6][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[4][31:0]' into 'PC_reg[6][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[2][31:0]' into 'PC_reg[3][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+INFO: [Synth 8-4471] merging register 'PC_reg[1][31:0]' into 'PC_reg[3][31:0]' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[90] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[89] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[87] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[86] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[85] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[82] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[80] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[79] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[77] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[76] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[74] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[73] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[71] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[70] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[69] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[67] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[66] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[63] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[62] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[61] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[60] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[59] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[58] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[57] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[56] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[55] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[54] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[53] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[52] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[51] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[50] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[49] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[48] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[47] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[46] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[45] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[44] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[43] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[42] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[41] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[40] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[39] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[38] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[37] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[36] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[35] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[34] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[33] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[32] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[31] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[30] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[29] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[28] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[27] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[26] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[25] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[24] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[23] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[22] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[21] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[20] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[19] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[17] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[16] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[15] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[14] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[13] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[12] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[11] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[10] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[8] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[7] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[5] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[4] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[2] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-6014] Unused sequential element PC_reg[1] was removed.  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:12]
+WARNING: [Synth 8-3848] Net PC[127] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[126] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[125] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[124] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[123] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[122] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[121] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[120] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[119] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[118] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[117] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[116] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[115] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[114] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[113] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[112] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[111] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[110] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[109] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[108] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[107] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[106] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[105] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[104] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[103] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[102] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[101] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[100] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[99] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[98] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[97] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[96] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[95] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[94] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[93] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+WARNING: [Synth 8-3848] Net PC[92] in module/entity PC_end does not have driver. [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'PC_end' (2#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/PC_end.v:1]
+INFO: [Synth 8-6157] synthesizing module 'InstructionDecoderI' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:78]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionDecoderI' (3#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:78]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:118]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:166]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:179]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:184]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:190]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:195]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:201]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:206]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:211]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:216]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:221]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:226]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:232]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:237]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:242]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:247]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:252]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:164]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:276]
+WARNING: [Synth 8-5788] Register ALU_OP_reg in module CU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:293]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (4#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:118]
+INFO: [Synth 8-6157] synthesizing module 'Regs' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Regs.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Regs' (5#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Regs.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/ALU.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (6#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DM' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/DM.v:1]
+WARNING: [Synth 8-5788] Register M_R_Data_reg in module DM is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/DM.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'DM' (7#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/DM.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'DM_Addr' does not match port width (8) of module 'DM' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/TOP.v:140]
+INFO: [Synth 8-6157] synthesizing module 'Display' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Display' (8#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Display.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (9#1) [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/TOP.v:1]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design top has unconnected port sw[27]
+WARNING: [Synth 8-3331] design top has unconnected port sw[26]
+WARNING: [Synth 8-3331] design top has unconnected port sw[25]
+WARNING: [Synth 8-3331] design top has unconnected port sw[24]
+WARNING: [Synth 8-3331] design top has unconnected port sw[23]
+WARNING: [Synth 8-3331] design top has unconnected port sw[22]
+WARNING: [Synth 8-3331] design top has unconnected port sw[21]
+WARNING: [Synth 8-3331] design top has unconnected port sw[20]
+WARNING: [Synth 8-3331] design top has unconnected port sw[19]
+WARNING: [Synth 8-3331] design top has unconnected port sw[18]
+WARNING: [Synth 8-3331] design top has unconnected port sw[17]
+WARNING: [Synth 8-3331] design top has unconnected port sw[16]
+WARNING: [Synth 8-3331] design top has unconnected port sw[15]
+WARNING: [Synth 8-3331] design top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top has unconnected port sw[11]
+WARNING: [Synth 8-3331] design top has unconnected port sw[10]
+WARNING: [Synth 8-3331] design top has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design top has unconnected port sw[0]
+WARNING: [Synth 8-3331] design top has unconnected port swb[4]
+WARNING: [Synth 8-3331] design top has unconnected port swb[3]
+WARNING: [Synth 8-3331] design top has unconnected port swb[2]
+WARNING: [Synth 8-3331] design top has unconnected port swb[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 601.262 ; gain = 269.141
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 601.262 ; gain = 269.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 601.262 ; gain = 269.141
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc]
+WARNING: [Vivado 12-507] No nets matched 'swb_IBUF[1]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'swb_IBUF[2]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'swb_IBUF[3]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'swb_IBUF[4]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'swb_IBUF[5]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'swb_IBUF[6]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[31]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[30]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[29]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[28]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[27]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[26]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[25]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[24]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[23]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[22]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[21]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[20]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[19]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[18]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[17]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[16]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'clk_IBUF'. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Summer/Task3/Task3.srcs/constrs_1/new/cst.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 948.844 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 948.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 948.844 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 948.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'CU'
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "w_data_s" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALU_OP" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[255]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[255]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[254]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[254]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[253]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[253]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[252]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[252]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[251]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[251]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[250]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[250]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[249]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[249]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[248]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[248]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[247]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[247]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[246]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[246]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[245]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[245]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[244]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[244]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[243]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[243]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[242]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[242]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[241]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[241]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[240]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[240]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[239]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[239]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[238]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[238]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[237]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[237]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[236]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[236]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[235]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[235]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[234]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[234]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[233]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[233]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[232]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[232]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[231]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[231]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[230]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[230]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[229]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[229]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[228]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[228]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[227]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[227]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[226]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[226]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[225]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[225]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[224]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[224]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[223]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[223]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[222]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[222]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[221]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[221]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[220]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[220]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[219]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[219]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[218]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[218]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[217]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[217]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[216]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[216]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[215]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[215]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[214]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[214]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "mem_reg[213]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "mem_reg[213]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "mem_reg[212]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[211]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[210]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[209]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[208]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[207]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[206]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[205]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[204]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[203]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[202]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[201]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[200]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[199]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[198]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[197]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[196]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[195]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[194]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[193]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[192]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[191]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[190]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[189]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[188]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[187]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[186]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[185]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[184]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[183]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[182]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[181]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[180]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[179]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[178]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[177]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[176]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[175]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[174]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[173]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[172]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[171]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[170]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[169]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[168]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[167]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[166]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[165]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[164]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[163]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[162]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[161]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[160]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[159]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[158]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[157]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "mem_reg[156]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:160]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:160]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                            00000 |                            00000
+                 iSTATE5 |                            00001 |                            00001
+                 iSTATE3 |                            00010 |                            00010
+                iSTATE14 |                            00011 |                            00100
+                 iSTATE2 |                            00100 |                            00011
+                iSTATE13 |                            00101 |                            00101
+                iSTATE10 |                            00110 |                            00110
+                 iSTATE9 |                            00111 |                            00111
+                iSTATE12 |                            01000 |                            01000
+                iSTATE11 |                            01001 |                            01001
+                 iSTATE8 |                            01010 |                            01010
+                 iSTATE7 |                            01011 |                            01011
+                 iSTATE1 |                            01100 |                            01100
+                 iSTATE4 |                            01101 |                            10000
+                 iSTATE0 |                            01110 |                            01101
+                  iSTATE |                            01111 |                            01110
+                iSTATE15 |                            10000 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'CU'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/Controller.v:160]
+WARNING: [Synth 8-327] inferring latch for variable 'F_temp_reg' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/ALU.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'OF_reg' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/ALU.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'CF_reg' [C:/Users/Summer/Task3/Task3.srcs/sources_1/new/ALU.v:26]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DM__GB0       |           1|     36617|
+|2     |DM__GB1       |           1|     10093|
+|3     |DM__GB2       |           1|     12423|
+|4     |DM__GB3       |           1|     15955|
+|5     |top__GC0      |           1|     11437|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 68    
+	                8 Bit    Registers := 256   
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	  10 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1029  
+	   4 Input      8 Bit        Muxes := 141   
+	   3 Input      6 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 2     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  17 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 14    
+	  17 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 254   
+	   2 Input      1 Bit        Muxes := 1868  
+	  10 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 10    
+	  11 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+Module DM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 256   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 1029  
+	   4 Input      8 Bit        Muxes := 141   
+	   4 Input      2 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 254   
+	   2 Input      1 Bit        Muxes := 1791  
+Module InstructionFetcher 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 18    
+	                6 Bit    Registers := 2     
+Module PC_end 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
+Module InstructionDecoderI 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  10 Input     32 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  17 Input      5 Bit        Muxes := 2     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	  17 Input      3 Bit        Muxes := 1     
+	  17 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 45    
+	   3 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 2     
+	  17 Input      1 Bit        Muxes := 10    
+Module Regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      1 Bit        Muxes := 4     
+Module Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design top has unconnected port sw[27]
+WARNING: [Synth 8-3331] design top has unconnected port sw[26]
+WARNING: [Synth 8-3331] design top has unconnected port sw[25]
+WARNING: [Synth 8-3331] design top has unconnected port sw[24]
+WARNING: [Synth 8-3331] design top has unconnected port sw[23]
+WARNING: [Synth 8-3331] design top has unconnected port sw[22]
+WARNING: [Synth 8-3331] design top has unconnected port sw[21]
+WARNING: [Synth 8-3331] design top has unconnected port sw[20]
+WARNING: [Synth 8-3331] design top has unconnected port sw[19]
+WARNING: [Synth 8-3331] design top has unconnected port sw[18]
+WARNING: [Synth 8-3331] design top has unconnected port sw[17]
+WARNING: [Synth 8-3331] design top has unconnected port sw[16]
+WARNING: [Synth 8-3331] design top has unconnected port sw[15]
+WARNING: [Synth 8-3331] design top has unconnected port sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port sw[13]
+WARNING: [Synth 8-3331] design top has unconnected port sw[12]
+WARNING: [Synth 8-3331] design top has unconnected port sw[11]
+WARNING: [Synth 8-3331] design top has unconnected port sw[10]
+WARNING: [Synth 8-3331] design top has unconnected port sw[9]
+WARNING: [Synth 8-3331] design top has unconnected port sw[8]
+WARNING: [Synth 8-3331] design top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port sw[1]
+WARNING: [Synth 8-3331] design top has unconnected port sw[0]
+WARNING: [Synth 8-3331] design top has unconnected port swb[4]
+WARNING: [Synth 8-3331] design top has unconnected port swb[3]
+WARNING: [Synth 8-3331] design top has unconnected port swb[2]
+WARNING: [Synth 8-3331] design top has unconnected port swb[1]
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design CU has unconnected port funct7[0]
+INFO: [Synth 8-3886] merging instance 'm_ALU/FR_reg[0]' (FD) to 'm_ALU/F_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[16][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[15][28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[14][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[13][28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[12][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[11][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[10][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[9][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[8][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[7][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[6][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[5][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[4][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[3][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[1][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[16][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[15][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[14][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[13][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[12][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[11][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[10][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[9][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[8][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[7][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[6][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[5][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[4][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[3][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[2][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[16][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[15][25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[14][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[13][25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[12][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[11][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[10][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[9][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[8][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[7][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[6][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[5][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[4][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[3][25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[1][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[16][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[15][29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[14][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[13][29] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[12][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[11][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[10][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[9][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[8][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[7][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[6][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[5][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[4][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[3][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[16][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[15][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[14][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[13][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[12][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[11][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[10][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[9][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[8][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[7][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[6][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[5][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[4][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[3][9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[2][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[1][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[16][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[15][26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[14][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[13][26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (m_InstructionFetcher/\IM_reg[12][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[11][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[10][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[9][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[8][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[7][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[6][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[5][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[4][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[3][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (m_InstructionFetcher/\IM_reg[2][26] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][0]' (FD) to 'm_pcend/PC_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][31]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][30]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][29]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][28]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][27]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][26]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][25]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][24]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][23]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][22]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][21]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][20]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][19]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][18]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][17]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][16]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][15]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][14]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][13]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][12]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][11]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][10]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][9]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][8]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][7]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[3][6]' (FD) to 'm_pcend/PC_reg[83][0]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[83][0]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][31]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][30]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][29]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][28]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][27]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][26]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][25]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][24]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][23]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][22]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][21]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][20]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][19]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][18]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][17]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][16]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][15]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][14]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][13]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][12]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][11]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][10]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][9]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][8]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][7]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[9][6]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][31]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][30]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][29]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][28]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][27]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][26]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][25]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][24]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][23]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][22]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][21]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][20]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][19]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][18]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][17]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][16]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][15]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][14]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][13]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][12]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][11]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][10]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][9]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][8]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][7]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[64][6]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][31]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][30]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][29]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][28]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][27]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][26]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][25]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][24]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][23]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][22]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][21]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][20]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][19]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][18]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][17]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][16]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][15]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][14]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Synth 8-3886] merging instance 'm_pcend/PC_reg[68][13]' (FD) to 'm_pcend/PC_reg[3][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:19 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DM__GB0       |           1|     15013|
+|2     |DM__GB1       |           1|      2011|
+|3     |DM__GB2       |           1|      2707|
+|4     |DM__GB3       |           1|      3132|
+|5     |top__GC0      |           1|      6148|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:01:24 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:24 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DM__GB0       |           1|     15013|
+|2     |DM__GB1       |           1|      2011|
+|3     |DM__GB2       |           1|      2707|
+|4     |DM__GB3       |           1|      3132|
+|5     |top__GC0      |           1|      6148|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:31 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |DM__GB0       |           1|      7239|
+|2     |DM__GB1       |           1|       791|
+|3     |DM__GB2       |           1|      1020|
+|4     |DM__GB3       |           1|      1261|
+|5     |top__GC0      |           1|      3134|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:59 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:59 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    42|
+|3     |LUT1   |    28|
+|4     |LUT2   |   222|
+|5     |LUT3   |   901|
+|6     |LUT4   |   635|
+|7     |LUT5   |  1176|
+|8     |LUT6   |  5975|
+|9     |MUXF7  |  1061|
+|10    |MUXF8  |   197|
+|11    |FDCE   |  2072|
+|12    |FDPE   |  1024|
+|13    |FDRE   |   155|
+|14    |FDSE   |    23|
+|15    |LD     |    39|
+|16    |IBUF   |     7|
+|17    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------+-------------------+------+
+|      |Instance               |Module             |Cells |
++------+-----------------------+-------------------+------+
+|1     |top                    |                   | 13572|
+|2     |  m_ALU                |ALU                |  3569|
+|3     |  m_CU                 |CU                 |   422|
+|4     |  m_DM                 |DM                 |  5387|
+|5     |  m_Display            |Display            |    38|
+|6     |  m_InstructionFetcher |InstructionFetcher |   466|
+|7     |  m_Regs               |Regs               |  3646|
+|8     |  m_pcend              |PC_end             |    21|
++------+-----------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:34 . Memory (MB): peak = 948.844 ; gain = 616.723
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 44 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 948.844 ; gain = 269.141
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:35 . Memory (MB): peak = 948.844 ; gain = 616.723
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1339 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 948.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  LD => LDCE: 39 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+537 Infos, 286 Warnings, 40 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:38 . Memory (MB): peak = 948.844 ; gain = 629.906
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 948.844 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Summer/Task3/Task3.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 19 11:01:32 2024...
